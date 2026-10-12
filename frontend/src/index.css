@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f7f7f8;
+    color: #171717;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* ================================
+   LOGIN
+================================ */
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        radial-gradient(
+            circle at top right,
+            #5d3fd3,
+            transparent 35%
+        ),
+        #101014;
+    padding: 30px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 430px;
+}
+
+.login-brand {
+    text-align: center;
+    color: white;
+    margin-bottom: 28px;
+}
+
+.brand-logo {
+    width: 58px;
+    height: 58px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    color: #111;
+    border-radius: 16px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.login-brand h1 {
+    margin-top: 15px;
+    font-size: 27px;
+}
+
+.login-brand p {
+    margin-top: 8px;
+    opacity: .65;
+    line-height: 1.5;
+}
+
+.login-card {
+    background: white;
+    padding: 34px;
+    border-radius: 22px;
+    box-shadow: 0 25px 80px rgba(0,0,0,.25);
+}
+
+.login-card h2 {
+    font-size: 24px;
+}
+
+.login-description {
+    color: #777;
+    margin: 8px 0 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+}
+
+.form-group input:focus {
+    border-color: #111;
+}
+
+.login-button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #111;
+    color: white;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.login-button:disabled {
+    opacity: .6;
+}
+
+.error-message {
+    background: #fff0f0;
+    color: #c62828;
+    padding: 11px;
+    border-radius: 9px;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.login-footer {
+    text-align: center;
+    color: rgba(255,255,255,.45);
+    font-size: 12px;
+    line-height: 1.6;
+    margin-top: 22px;
+}
+
+
+/* ================================
+   NAVBAR
+================================ */
+
+.navbar {
+    height: 72px;
+    background: white;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.brand-small {
+    width: 35px;
+    height: 35px;
+    background: #111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-menu button {
+    border: none;
+    background: none;
+    font-weight: 500;
+}
+
+.student-menu {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-left: 20px;
+    border-left: 1px solid #ddd;
+}
+
+.student-menu span {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.student-menu button {
+    color: #777;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+    min-height: 470px;
+    padding: 70px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #111;
+    color: white;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-label {
+    font-size: 12px;
+    letter-spacing: 3px;
+    opacity: .55;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: .98;
+    margin: 20px 0;
+    letter-spacing: -3px;
+}
+
+.hero h1 span {
+    opacity: .45;
+}
+
+.hero p {
+    max-width: 520px;
+    line-height: 1.7;
+    color: #aaa;
+}
+
+.hero button {
+    margin-top: 28px;
+    padding: 14px 22px;
+    border: none;
+    border-radius: 9px;
+    background: white;
+    color: #111;
+    font-weight: 700;
+}
+
+.hero-decoration {
+    font-size: 100px;
+    font-weight: 800;
+    line-height: .8;
+    text-align: right;
+    opacity: .06;
+    transform: rotate(-8deg);
+}
+
+
+/* ================================
+   PROFILE
+================================ */
+
+.profile-banner {
+    margin: -25px 9% 0;
+    position: relative;
+    background: white;
+    border-radius: 18px;
+    padding: 24px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,.08);
+}
+
+.profile-banner small {
+    color: #999;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.profile-banner h3 {
+    margin: 4px 0;
+}
+
+.profile-banner p {
+    color: #777;
+    font-size: 13px;
+}
+
+.profile-academic {
+    text-align: right;
+}
+
+.profile-academic span {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.profile-academic small {
+    letter-spacing: 0;
+}
+
+
+/* ================================
+   PRODUCTS
+================================ */
+
+.products-section {
+    padding: 80px 9%;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 30px;
+}
+
+.section-header span {
+    color: #888;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.section-header h2 {
+    font-size: 32px;
+    margin-top: 6px;
+}
+
+.section-header p {
+    color: #888;
+    font-size: 13px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 17px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    transition: .2s;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 40px rgba(0,0,0,.08);
+}
+
+.product-image {
+    height: 230px;
+    background: #e9e9ea;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 18px;
+    color: #222;
+}
+
+.product-image span {
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.product-image div {
+    font-size: 28px;
+    font-weight: 800;
+    opacity: .15;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info > small {
+    color: #999;
+    font-size: 10px;
+}
+
+.product-info h3 {
+    font-size: 17px;
+    margin: 7px 0;
+}
+
+.product-access {
+    font-size: 11px;
+    color: #777;
+    min-height: 30px;
+}
+
+.product-bottom {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-bottom strong {
+    font-size: 16px;
+}
+
+.product-bottom button {
+    border: none;
+    background: #111;
+    color: white;
+    border-radius: 8px;
+    padding: 9px 12px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.toast {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    background: #111;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 10px;
+    z-index: 50;
+    font-size: 13px;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    padding: 40px 9%;
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer span {
+    color: #777;
+    font-size: 12px;
+}
+
+
+/* ================================
+   LOADING
+================================ */
+
+.loading-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .navbar-menu {
+        gap: 8px;
+    }
+
+    .student-menu span {
+        display: none;
+    }
+
+    .hero {
+        padding: 60px 25px;
+    }
+
+    .hero-decoration {
+        display: none;
+    }
+
+    .profile-banner {
+        margin: -20px 20px 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .profile-academic {
+        text-align: left;
+    }
+
+    .products-section {
+        padding: 60px 20px;
+    }
+
+    .section-header {
+        align-items: flex-start;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
